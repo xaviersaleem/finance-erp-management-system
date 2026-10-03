@@ -64,9 +64,9 @@ Example sales posting:
 
 Next iterations add receipts/payments, AR/AP aging, purchase orders, inventory movements, fixed assets/depreciation, department budgets, approval workflow, period locks, bank reconciliation, month-end close, authentication/RBAC, audit logs, Excel import/export and richer financial statements.
 
-## Excel prototype
+## Excel finance prototype
 
-The repository is designed to include `Project_2_Advanced_ERP_Finance_AppSheet_Ready.xlsx` alongside the application. The workbook acts as the finance prototype, reference dataset and validation/control model.
+`Project_2_Advanced_ERP_Finance.xlsx` is included alongside the application. It serves as the finance prototype, synthetic operating dataset, accounting validation model and reference design for the coded ERP. The long-term application architecture is database-backed rather than AppSheet-dependent.
 
 ## Portfolio disclosure
 
