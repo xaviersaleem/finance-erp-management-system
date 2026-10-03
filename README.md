@@ -1,78 +1,77 @@
-# Northstar Finance ERP
+# Advanced ERP Finance & Management System — Excel
 
-A portfolio-grade Finance ERP prototype that evolves the accompanying Excel ERP model into a database-backed web application. The project demonstrates accounting process design, double-entry posting, relational data modeling, API development, financial reporting and management controls.
+A portfolio finance systems project demonstrating how core ERP accounting processes can be structured, controlled and reported in Microsoft Excel.
 
-> Northstar Integrated Trading LLC is fictional and all data is synthetic.
+> **Portfolio disclosure:** Northstar Integrated Trading LLC is a fictional company and all data in this project is synthetic. The model was created solely to demonstrate finance, accounting, FP&A and ERP-system design skills.
 
-## Architecture
+## Project Objective
 
-**React/Vite UI → FastAPI REST API → PostgreSQL → Double-entry journal → Financial KPIs & reporting**
+The objective was to build an integrated finance model that connects operational transactions with accounting records, financial statements and management reporting.
 
-SQLite is the zero-configuration local fallback; Docker Compose runs PostgreSQL.
+Rather than treating each finance schedule as a standalone spreadsheet, the workbook is structured around an ERP-style flow:
 
-## Current Build — v0.2
+**Master Data → Transactions → General Ledger → Financial Statements → Management Reporting & Controls**
 
-- Chart of accounts, customer, vendor and product masters
-- Sales invoice entry API with automatic AR, revenue, tax, COGS and inventory journal posting
-- Purchase invoice entry API with automatic AP and tax posting
-- Customer receipt processing with invoice-level cash application
-- Vendor payment processing with bill-level AP clearing
-- AR and AP aging endpoints with days-past-due tracking
-- Inventory movement ledger for sales issues
-- Trial balance and P&L / balance sheet reporting endpoints
-- Double-entry general ledger
-- Management dashboard API
-- Responsive finance dashboard UI
-- PostgreSQL-ready schema and Docker environment
-- Health endpoint and API documentation through FastAPI `/docs`
+## Workbook
 
-## Run locally
+**Project_2_Advanced_ERP_Finance.xlsx**
 
-### Fastest backend demo
-```bash
-cd backend
-python -m venv .venv
-# Windows: .venv\Scripts\activate
-# macOS/Linux: source .venv/bin/activate
-pip install -r requirements.txt
-uvicorn app.main:app --reload
-```
+The workbook contains the complete portfolio model and supporting synthetic dataset.
 
-Open API docs at `http://localhost:8000/docs`.
+## Key Modules
 
-### Frontend
-```bash
-cd frontend
-npm install
-npm run dev
-```
+- Chart of Accounts and finance master data
+- Customer and vendor masters
+- Product master
+- Sales invoice register
+- Purchase invoice register
+- Customer receipts
+- Vendor payments
+- Manual journals
+- General Ledger
+- Trial Balance
+- Profit & Loss Statement
+- Balance Sheet
+- Accounts Receivable Aging
+- Accounts Payable Aging
+- Inventory Summary
+- Department Budget
+- Fixed Asset Register
+- Month-End Close Checklist
+- Finance / Management Dashboard
 
-Open `http://localhost:5173`.
+## Finance & ERP Concepts Demonstrated
 
-### Full PostgreSQL stack
-```bash
-docker compose up --build
-```
+The project demonstrates practical understanding of:
 
-## Accounting design
+- Double-entry accounting structure
+- Order-to-cash and accounts receivable processes
+- Procure-to-pay and accounts payable processes
+- General-ledger reporting
+- Financial-statement preparation
+- Working-capital monitoring
+- Customer and vendor balance management
+- Inventory reporting
+- Department budgeting
+- Fixed-asset management
+- Month-end close controls
+- Management reporting and KPI design
+- ERP-style master-data and transaction architecture
 
-Operational documents do not directly become financial statements. Approved transactions generate balanced journal lines. Reporting reads from the journal, preserving an auditable accounting trail.
+## Management Use Case
 
-Example sales posting:
-- Dr Accounts Receivable
-- Cr Sales Revenue
-- Cr Tax Payable
-- Dr Cost of Goods Sold
-- Cr Inventory
+The model is designed as a finance control environment for a fictional trading and distribution business. Finance can use the workbook to review transactions, monitor receivables and payables, reconcile ledger balances, analyze financial performance and support the month-end reporting cycle.
 
-## Next development phase
+## Portfolio Value
 
-The core accounting cycle is now implemented. Remaining portfolio-grade controls and modules are purchase orders, inventory receipts/adjustments, fixed assets/depreciation, department budgets and variance reporting, approval workflow, accounting period locks, bank reconciliation, month-end close, authentication/RBAC, audit logs, Excel import/export and expanded UI transaction forms.
+This project complements my FP&A Budget, Actual & Rolling Forecast Model by demonstrating the accounting and transaction-processing side of finance. Together, the projects show experience with both forward-looking planning and the underlying financial processes that produce management information.
 
-## Excel finance prototype
+## Tools
 
-`Project_2_Advanced_ERP_Finance.xlsx` is included alongside the application. It serves as the finance prototype, synthetic operating dataset, accounting validation model and reference design for the coded ERP. The long-term application architecture is database-backed rather than AppSheet-dependent.
+**Microsoft Excel · Financial Modeling · ERP Process Design · General Ledger · AR/AP · Financial Reporting · Budgeting · Management Reporting**
 
-## Portfolio disclosure
+## Author
 
-This is a fictional portfolio simulation created to demonstrate finance, accounting systems, ERP architecture and software-development skills. It contains no employer or confidential data.
+**Raza Saleem**
+
+Finance & FP&A Portfolio Project
