@@ -10,11 +10,16 @@ A portfolio-grade Finance ERP prototype that evolves the accompanying Excel ERP 
 
 SQLite is the zero-configuration local fallback; Docker Compose runs PostgreSQL.
 
-## Current MVP
+## Current Build — v0.2
 
 - Chart of accounts, customer, vendor and product masters
 - Sales invoice entry API with automatic AR, revenue, tax, COGS and inventory journal posting
 - Purchase invoice entry API with automatic AP and tax posting
+- Customer receipt processing with invoice-level cash application
+- Vendor payment processing with bill-level AP clearing
+- AR and AP aging endpoints with days-past-due tracking
+- Inventory movement ledger for sales issues
+- Trial balance and P&L / balance sheet reporting endpoints
 - Double-entry general ledger
 - Management dashboard API
 - Responsive finance dashboard UI
@@ -60,9 +65,9 @@ Example sales posting:
 - Dr Cost of Goods Sold
 - Cr Inventory
 
-## Roadmap
+## Next development phase
 
-Next iterations add receipts/payments, AR/AP aging, purchase orders, inventory movements, fixed assets/depreciation, department budgets, approval workflow, period locks, bank reconciliation, month-end close, authentication/RBAC, audit logs, Excel import/export and richer financial statements.
+The core accounting cycle is now implemented. Remaining portfolio-grade controls and modules are purchase orders, inventory receipts/adjustments, fixed assets/depreciation, department budgets and variance reporting, approval workflow, accounting period locks, bank reconciliation, month-end close, authentication/RBAC, audit logs, Excel import/export and expanded UI transaction forms.
 
 ## Excel finance prototype
 
